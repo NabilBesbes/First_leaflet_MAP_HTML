@@ -1,8 +1,13 @@
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/NabilBesbes/First_leaflet_MAP_HTML/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+## instructions to create your web pages 
+link here : 
+https://dev.to/bolajiayodeji/how-to-convert-github-markdown-files-to-a-simple-website-4e14
 
 ### Markdown
 
