@@ -1,7 +1,7 @@
 ---
-title: "Hello Leaflet in R Markdown"
+title: "Hello Plotly in R Markdown"
 author: "N B"
-date: "2020-10-14"
+date: "2020-10-17"
 output: html_document
 ---
 
@@ -12,14 +12,21 @@ date()
 
 ```
 
-### Leaflet with R
+### loading library and datasets
 
 ```{r}
-library(leaflet)
-my_map <- leaflet() %>% addTiles(
-my_map <- my_map %>% addMarkers(lat=35.776474, lng=10.833010, popup=35.776974, 10.833005"Ribat_ Monastir")
-my_map
-
+library(plotly)
+library(tidyr)
+data("iris")
 ```
 
+### Ploting the data
+
+```{r}
+plot_ly(iris, x=~Petal.Width, y=~Petal.Length, 
+        mode="markers", color=~Species, name=~Species) %>%
+  layout(xaxis=list(title="Petal Width (cm)"), 
+         yaxis=list(title="Petal Length (cm)"),
+         title="Iris Classification")
+```
 
