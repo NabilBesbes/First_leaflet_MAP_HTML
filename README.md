@@ -13,12 +13,12 @@ https://dev.to/bolajiayodeji/how-to-convert-github-markdown-files-to-a-simple-we
 
 With R directly we can write this code:
 
-```markdown
+```{r}
 require(knitr) # required for knitting from rmd to md
 require(markdown) # required for md to html 
-knit('test.rmd', 'test.md') # creates md file
-markdownToHTML('test.md', 'test.html') # creates html file
-browseURL(paste('file://', file.path(getwd(),'test.html'), sep='')) # open file in browser
+knit('First_Plotly.Rmd', 'F.md') # creates md file
+markdownToHTML('F.md', 'F.html') # creates html file
+browseURL(paste('file://', file.path(getwd(),'F.html'), sep='')) # open file in browser
 ```
 
 ### Markdown
