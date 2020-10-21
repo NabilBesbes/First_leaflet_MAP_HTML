@@ -11,6 +11,16 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 link here : 
 https://dev.to/bolajiayodeji/how-to-convert-github-markdown-files-to-a-simple-website-4e14
 
+With R directly we can write this code:
+
+```markdown
+require(knitr) # required for knitting from rmd to md
+require(markdown) # required for md to html 
+knit('test.rmd', 'test.md') # creates md file
+markdownToHTML('test.md', 'test.html') # creates html file
+browseURL(paste('file://', file.path(getwd(),'test.html'), sep='')) # open file in browser
+```
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
